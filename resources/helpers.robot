@@ -37,3 +37,17 @@ Go To CheckBox
     Wait Until Page Contains    INPUTS
     Click Text    CHECKBOX
     Wait Until Page Contains    Marque as techs que usam Appium
+
+Go To Short Click
+    Open Nav
+    Click Text    BOTÕES
+    Wait Until Page Contains    CLIQUE SIMPLES
+    Click Text    CLIQUE SIMPLES
+    Wait Until Page Contains    Botão clique simples
+
+Go To Long Click
+    Open Nav
+    Click Text    BOTÕES
+    Wait Until Page Contains    CLIQUE LONGO
+    Click Text    CLIQUE LONGO
+    Wait Until Page Contains    Botão clique longo
