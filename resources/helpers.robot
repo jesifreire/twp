@@ -1,11 +1,14 @@
 *** Settings ***
-Documentation     Aqui teremos as keywords helpers
-Library           AppiumLibrary
+Documentation       Aqui teremos as keywords helpers
+
+Library             AppiumLibrary
+
 
 *** Variables ***
-${START}          COMEÇAR
-${HAMBURGUER}     xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]
-${NAV_VIEW}       id=io.qaninja.android.twp:id/navView
+${START}            COMEÇAR
+${HAMBURGUER}       xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]
+${NAV_VIEW}         id=io.qaninja.android.twp:id/navView
+
 
 *** Keywords ***
 Get Started
@@ -51,3 +54,18 @@ Go To Long Click
     Wait Until Page Contains    CLIQUE LONGO
     Click Text    CLIQUE LONGO
     Wait Until Page Contains    Botão clique longo
+
+Go To SignUp Form
+    Open Nav
+
+    Click Text    FORMS
+    Wait Until Page Contains    CADASTRO
+    Click Text    CADASTRO
+    Wait Until Page Contains    Bem-vindo, crie sua conta.
+
+Go To Avengers List
+    Open Nav
+    Click Text    AVENGERS
+    Wait Until Page Contains    AVENGERS
+    Click Text    LISTA
+    Wait Until Page Contains    LISTA
