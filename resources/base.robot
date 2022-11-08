@@ -1,6 +1,8 @@
 *** Settings ***
-Library           AppiumLibrary
-Resource          helpers.robot
+Library     AppiumLibrary
+Library     libs/extend.py
+Resource    helpers.robot
+
 
 *** Keywords ***
 Open Session
